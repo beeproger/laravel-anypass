@@ -58,6 +58,6 @@ class AnyPassServiceProvider extends ServiceProvider
      */
     private function appEnvIsSafe()
     {
-        return in_array(env('APP_ENV'), ['local', 'testing']);
+        return in_array(env('APP_ENV'), ['local', 'testing', 'staging', 'acceptance']);
     }
 }
